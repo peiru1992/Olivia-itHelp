@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每天5分鐘學前端</title>
+</head>
+<body>
+
+    <form action="#" method="#">
+        <div>  
+            <label>帳號：</label>
+            <input type="text" name="user_id">
+        </div>
+
+        <div>  
+            <label>密碼：</label>
+            <input type="password" name="user_password">
+        </div>
+
+        <div>
+            <label>性別：</label>
+            <input type="radio" name="gender" id="male" value="boy">
+            <label for="male">男生</label>
+            <input type="radio" name="gender" id="female" value="girl">
+            <label for="female">女生</label>
+            <input type="radio" name="gender" id="mystery" value="secret" checked>
+            <label for="mystery">不告訴你</label>
+        </div>
+
+        <div>
+            <label>出生的季節：</label>
+            <select name="season">
+                <option value="spring">春</option>
+                <option value="summer">夏</option>
+                <option value="autumn">秋</option>
+                <option value="winter">冬</option>
+            </select>
+        </div>
+
+        <div>
+            <label>喜歡的食物：</label>
+            <input type="checkbox" id="pasta" name="food[]" value="italy_pasta">
+            <label for="pasta">義大利麵</label>
+            <input type="checkbox" id="pizza" name="food[]" value="italy_pizza">
+            <label for="pizza">披薩</label>
+            <input type="checkbox" id="ramen" name="food[]" value="japan_ramen">
+            <label for="ramen">拉麵</label>
+            <input type="checkbox" id="sushi" name="food[]" value="japan_sushi">
+            <label for="sushi">壽司</label>
+            <input type="checkbox" id="other" name="food[]" value="unknown">
+            <label for="other">其他</label>
+        </div>
+
+        <div>
+            <label>留言：</label><br>
+            <textarea name="notes"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">送出資料</button>
+        </div>
+    </form>
+    
+</body>
+</html>
