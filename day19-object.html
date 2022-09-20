@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每天5分鐘學前端</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        th{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>夢想中的車庫</caption>
+        <tr>
+            <th>品牌</th>
+            <th>型號</th>
+            <th>顏色</th>
+        </tr>
+        <tr>
+            <td id="name1"></td>
+            <td id="spec1"></td>
+            <td id="color1"></td>
+        </tr>
+        <tr>
+            <td id="name2"></td>
+            <td id="spec2"></td>
+            <td id="color2"></td>
+        </tr>
+        <tr>
+            <td id="name3"></td>
+            <td id="spec3"></td>
+            <td id="color3"></td>
+        </tr>
+    </table>
+
+    <script>
+        const car1 = {
+            name: "Aston Martin",
+            spec: "DBS",
+            color: "Red"
+        };
+        const car2 = {
+            name: "Audi",
+            spec: "R8",
+            color: "Blue"
+        };
+        const car3 = {
+            name: "Porsche",
+            spec: "918 Spyder",
+            color: "Black"
+        };
+
+        document.getElementById("name1").innerHTML = car1.name;
+        document.getElementById("spec1").innerHTML = car1.spec;
+        document.getElementById("color1").innerHTML = car1.color;
+        
+        document.getElementById("name2").innerHTML = car2.name;
+        document.getElementById("spec2").innerHTML = car2.spec;
+        document.getElementById("color2").innerHTML = car2.color;
+        
+        document.getElementById("name3").innerHTML = car3.name;
+        document.getElementById("spec3").innerHTML = car3.spec;
+        document.getElementById("color3").innerHTML = car3.color;
+    </script>
+    
+</body>
+</html>
