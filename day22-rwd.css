@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a{
+    background-color: red;
+}
+.b{
+    background-color: orange;
+}
+.c{
+    background-color: yellow;
+}
+.d{
+    background-color: green;
+}
+.e{
+    background-color: blue;
+}
+.f{
+    background-color: violet;
+}
+.g{
+    background-color: purple;
+}
+.h{
+    background-color: grey;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.mobile{ width: 100%;}
+@media screen and (min-width:768px){
+    .forTablet{ width: 50%;}
+}
+@media screen and (min-width:1024px){
+    .forLaptop{ width: 33.33%;}
+}
+@media screen and (min-width:1200px){
+    .forDesktop{ width: 25%;}
+} 
