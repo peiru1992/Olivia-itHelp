@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+:root{
+    --width: 1200px;
+    --border-show: 1px solid gray;
+    --border-hide: 1px solid transparent;
+    --radius-large: 10px;
+    --radius-small: 5px;
+}
+/* 共同 */
+header, section, footer{
+    max-width: var(--width);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: var(--radius-small);
+}
+/* header: Logo. 標題 */
+header{
+    margin: auto;
+    display: flex;
+}
+header div{
+    margin-left: 10px;
+    width: 70px;
+}
+header h1{
+    line-height: 70px;
+}
+/* nav: 導覽列 */
+nav{
+    margin: auto;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    width: 120px;
+    text-align: center;
+    font-size: 26px;
+    list-style: none;
+    border: var(--border-hide);
+    border-radius: var(--radius-large);
+    margin: 0 20px;
+    padding: 10px;
+}
+nav ul li:hover{
+    cursor: pointer;
+    border: var(--border-show);
+    background-color: gray;
+    color: azure;
+}
+/* header: 日夜標籤 */
+span{
+    display: inline-block;
+    padding: 3px;
+    border: var(--border-show);
+    border-radius: var(--radius-small);
+}
+span:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: azure;
+}
+/* section */
+section{
+    margin: 20px auto;
+}
+.container{
+    display: flex;
+}
+.item{
+    border: var(--border-show);
+    border-radius: var(--radius-large);
+    padding: 30px;
+    margin: 10px;
+}
+.item h2, .item p{
+    padding: 10px;
+}
+.box{
+    display: flex;
+    align-items: center; /* 沿著交錯軸中間切齊排列，達到置中效果 */
+    justify-content: space-evenly;
+    border: var(--border-show);
+    border-radius: var(--radius-large);
+    padding: 30px;
+    margin: 10px;
+}
+.box div{
+    margin: 10px;
+    padding: 10px;
+}
+.box div img{
+    width: 400px;
+}
+.box h3, .box p{
+    margin: 10px;
+}
+/* footer */
+footer{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    width: 240px;
+}
+footer div p{
+    margin-left: 10px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+}
+footer ul li{
+    width: 100px;
+    text-align: center;
+    font-size: 22px;
+    list-style: none;
+    border: var(--border-hide);
+    border-radius: var(--radius-large);
+    margin: 10px;
+    padding: 10px;
+}
+footer ul li:hover{
+    cursor: pointer;
+    border: var(--border-show);
+    background-color: gray;
+    color: azure;
+}
